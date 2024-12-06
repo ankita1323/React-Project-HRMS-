@@ -1,0 +1,90 @@
+.calendar {
+    width: 1000px;
+    margin: 40px auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #43A047;
+    color: white;
+    height: 20px;
+    padding: 30px;
+    
+  }
+  .days-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap:0px;
+  }
+  .day-header, .day, .day-empty {
+    padding: 10px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+  }
+  .day:hover {
+    background: #87ceeb;
+    cursor: pointer;
+  }
+  .day {
+    padding: 5px;
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    text-align: right; /* Aligns the text to the right */
+    vertical-align: top; /* Keeps the text aligned at the top */
+    display: flex;
+    justify-content: flex-end; /* Aligns content to the right */
+    align-items: flex-start; /* Aligns content to the top */
+    font-size: 12px;
+    padding-bottom: 20px;
+  }
+  
+  .day:hover {
+    background: #87ceeb;
+    cursor: pointer;
+  }
+  .day.today {
+    background-color:rgb(30 64 175); /* Highlight color */
+    font-weight: bold;
+    color: #fffcfc;
+    border: 2px solid #9cff07;
+  }
+  /*Attendance */
+  .attendance-calendar {
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .green-tick {
+    color: green;
+    font-size: 1.5rem;
+  }
+  
+  .red-cross {
+    color: red;
+    font-size: 1.5rem;
+  }
+  
+  .blue-dot {
+    color: rgb(181, 181, 31);
+    font-size: 1.5rem;
+  }
+  
+  .smile {
+    color: orange;
+    font-size: 1.5rem;
+  }
+  .symbol {
+    padding-right: 5px;
+    text-align: center; 
+    vertical-align: middle; 
+    display: flex;
+
+    align-items: flex-start;  
+    font-size: 24px;
+    padding-top: 30px;
+  }
+    
